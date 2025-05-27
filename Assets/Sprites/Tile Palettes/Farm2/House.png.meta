@@ -118,7 +118,7 @@ TextureImporter:
         width: 72
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,7 +140,7 @@ TextureImporter:
         width: 14
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,7 +162,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,7 +184,7 @@ TextureImporter:
         width: 32
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -198,28 +198,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: House_4
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 14
-        width: 72
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c213e658d38919844b18c1197ed866bf
-      internalID: 1785511554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: House_5
       rect:
         serializedVersion: 2
@@ -228,14 +206,14 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b58ada396bd4eec48b0c1137e4e476d9
+      spriteID: c6f3c268e68d93d48ad1f18d546c1efa
       internalID: -937886713
       vertices: []
       indices: 
@@ -250,14 +228,14 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f926a56875f88024eb10539c9885c298
+      spriteID: b796f6cd27395a94a8ccdb84995e3b26
       internalID: -439623349
       vertices: []
       indices: 
@@ -272,14 +250,14 @@ TextureImporter:
         width: 16
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc4e6627561f1aa4898fa240e09b484e
+      spriteID: 3a74a5651bd7dd94bba299990a25fe0d
       internalID: -686989126
       vertices: []
       indices: 
@@ -294,15 +272,59 @@ TextureImporter:
         width: 13
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e43e686a138de0a4ca4fbe87c2d9eb1b
+      spriteID: b1e8319a5ff70d643a713df666804593
       internalID: -1419220633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 53
+        width: 72
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5a60d67c3a3524899d7f02b5a86de1
+      internalID: 1785511554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_9
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 14
+        width: 72
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9230e5e97ffe0044b849e6d1e319b417
+      internalID: 303719470
       vertices: []
       indices: 
       edges: []
@@ -330,6 +352,7 @@ TextureImporter:
       House_6: -439623349
       House_7: -686989126
       House_8: -1419220633
+      House_9: 303719470
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
