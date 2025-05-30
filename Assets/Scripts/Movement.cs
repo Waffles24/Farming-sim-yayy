@@ -63,9 +63,7 @@ public class Movement : MonoBehaviour
     }
 
 
-
-
-    private void FixedUpdate()
+      private void FixedUpdate()
     {
         /* "=" assigns the value on the right to the variable on the left.
           "+=" adds the value on the right to the variable on the left, aswell as replacing it.
@@ -81,7 +79,10 @@ public class Movement : MonoBehaviour
           with GetAxis the character seemed to keep moving after the key was let go - this could work
          for an icy level, although for grass I want a faster response.
          */
+
+
         transform.position += Direction * Speed * Time.deltaTime;
+
 
         if (B_Was_Pressed)
         {
