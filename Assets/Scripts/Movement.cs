@@ -63,7 +63,7 @@ public class Movement : MonoBehaviour
     }
 
 
-      private void FixedUpdate()
+    private void FixedUpdate()
     {
         /* "=" assigns the value on the right to the variable on the left.
           "+=" adds the value on the right to the variable on the left, aswell as replacing it.
@@ -92,5 +92,6 @@ public class Movement : MonoBehaviour
 
 
     }
+
 
 }
