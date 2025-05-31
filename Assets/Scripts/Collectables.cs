@@ -2,27 +2,34 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
+// SCRIPT AIM :
+
+//detect collision
+//add item to player
+//destroy object
+
+
 public class Collectables : MonoBehaviour
 {
-    //detect collision
-    //add item to player
-    //destroy object
-    [SerializeField] Transform Collision_Checker;
 
-    public Inventory inventory_Script;
-    public GameObject strawberry;
+    public CollectablesType type;
 
-
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (strawberry.gameObject)
+        Player player = collision.GetComponent<Player>();
+
+        if (player)
         {
-            inventory_Script.strawberriesCollected++;
-            Destroy(other.gameObject);
+            player.inventory.Add(type);
+            Destroy(this.gameObject);
         }
 
     }
-    
 
-
+}
+public enum CollectablesType
+    //an enum can represent a list of string names, all assigned a numeric value
+    //in this case NONE = 0, STRAWBERRY_SEEDS = 1 etc
+{
+    NONE, STRAWBERRY_SEEDS, CARROT_SEEDS, TOMATO_SEEDS
 }
