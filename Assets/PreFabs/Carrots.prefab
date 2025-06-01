@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
+  icon: {fileID: -141592231, guid: a72b0edb03dc02344bdd5fbfee625c62, type: 3}
 --- !u!61 &7071610845009216004
 BoxCollider2D:
   m_ObjectHideFlags: 0

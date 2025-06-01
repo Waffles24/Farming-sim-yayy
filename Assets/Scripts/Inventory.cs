@@ -31,6 +31,7 @@ public class Inventory
         public CollectablesType type;
         public int count;
         public int maxCapacity;
+        public Sprite icon;
 
         //if List<Slot> is unrecognised, make sure to include system.Collections.Generic!
         //now we have a list of slots!
@@ -58,10 +59,12 @@ public class Inventory
             }
         }
 
-        public void AddItem(CollectablesType type)
+        public void AddItem(Collectables item)
         {
-            this.type = type;
+            this.type = item.type;
             count++;
+            this.icon = item.icon;
+
         }
 
     }
@@ -85,7 +88,7 @@ public class Inventory
 
 
     //this class will be used to add items the player collects to the iventory
-    public void Add(CollectablesType typeToAdd)
+    public void Add(Collectables item)
     {
         //after collecting an item, we can search for the same item in our inventory :
         //for each will check each item in a list or array
@@ -93,9 +96,9 @@ public class Inventory
         {
             //the value of each slot space is checked against the value of the new item being added 
             //&& returns true if both statements are true
-            if(slot.type == typeToAdd && slot.canAddItem())
+            if(slot.type == item.type && slot.canAddItem())
             {
-                slot.AddItem(typeToAdd);
+                slot.AddItem(item);
                 return;
             }
         }
@@ -104,7 +107,7 @@ public class Inventory
         {
             if (slot.type == CollectablesType.NONE)
             {
-                slot.AddItem(typeToAdd);
+                slot.AddItem(item);
                 return;
             }
         }

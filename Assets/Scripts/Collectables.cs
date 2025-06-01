@@ -13,6 +13,7 @@ public class Collectables : MonoBehaviour
 {
 
     public CollectablesType type;
+    public Sprite icon;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,7 +21,7 @@ public class Collectables : MonoBehaviour
 
         if (player)
         {
-            player.inventory.Add(type);
+            player.inventory.Add(this);
             Destroy(this.gameObject);
         }
 
