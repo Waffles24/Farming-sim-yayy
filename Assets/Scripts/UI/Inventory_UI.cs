@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+//note - you can rename stuff with ctrl + r twice
 
 public class Inventory_UI : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class Inventory_UI : MonoBehaviour
         if(!inventoryPanel.activeSelf)
         {
             inventoryPanel.SetActive(true);
-            Setup();
+            Refresh();
         }
 
         else
@@ -37,7 +38,7 @@ public class Inventory_UI : MonoBehaviour
     }
 
 
-    void Setup()
+    void Refresh()
     {
         for (int i = 0; i < slots.Count; i++)
         {
@@ -53,6 +54,10 @@ public class Inventory_UI : MonoBehaviour
         }
     }
 
-
+    public void Remove(int slotID)
+    {
+        player.inventory.Remove(slotID);
+        Refresh();
+    }
 
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-
+using System.Collections;
 
 /*stuff to do
     a) detect collision
@@ -67,6 +67,20 @@ public class Inventory
 
         }
 
+        public void RemoveItem()
+        {
+            if(count < 0)
+            {
+                count--;
+
+                if(count == 0)
+                {
+                    Debug.Log("icon is null");
+                    icon = null;
+                    type = CollectablesType.NONE;
+                }
+            }
+        }
     }
 
 
@@ -111,8 +125,13 @@ public class Inventory
                 return;
             }
         }
-                
+         
     }
 
+    //we can use an index, since the slots are in a list, item 1 will be index 0, item 2 index 1 etc
+    public void Remove(int index)
+    {
+        slots[index].RemoveItem();
+    }
 
 }

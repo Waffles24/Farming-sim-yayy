@@ -47,6 +47,9 @@ TagManager:
   - name: sprites
     uniqueID: 3275799833
     locked: 0
+  - name: InteractableMap
+    uniqueID: 942034005
+    locked: 0
   m_RenderingLayers:
   - Default
   - Light Layer 1
